@@ -30,13 +30,17 @@ model_dir = snapshot_download('l424102993/LLM_TQ_Tuned_model', cache_dir = "./")
 
 ## 使用方式
 
-1.启动评分服务
+1. 修改config.ymal
+
+修改模型目录以及cuda
+
+2.启动评分requests服务
 ```python
 python evaluator_request.py
 ```
 
-2.使用Evaluate_example.ipynb 调用api接口或本地模型进行单个模型单次的评分测试
+3.使用Evaluate_example.ipynb 调用api接口或本地模型进行单个模型单次的评分测试
 
 ## 批量评估
 
-2.使用Evaluate_batch.ipynb 调用api接口或本地模型进行多个模型的评分测试
+1.使用Evaluate_batch.ipynb 调用api接口或本地模型进行多个模型的评分测试
