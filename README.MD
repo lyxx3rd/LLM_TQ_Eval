@@ -1,3 +1,11 @@
+## 配置环境
+
+python = 3.12.9
+
+安装环境
+```bash
+pip install -r requirements.txt
+```
 ## 模型下载
 
 Qwen_7B_Review_Tuned_model : https://www.modelscope.cn/l424102993/LLM_TQ_Tuned_model.git
