@@ -1,0 +1,6 @@
+evaluator_request:
+    Qwen_7B_comment_Tuned_model : "/data/home/shizeyang/lyh_workzone/LLM_Scores/LLaMA-Factory/saves/qwen2-7b/full/sft_7b/tuned_model"
+    Regression_model_base : "/data/home/shizeyang/shared/models/iic/nlp_bert_backbone_base_std"
+    Regression_model_regression : "/data/home/shizeyang/lyh_workzone/LLM_Scores/V4/best_regression_bert_tri_inputs.pth"
+    calculate_device : "cuda:7"
+
