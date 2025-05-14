@@ -3,3 +3,4 @@ flask
 transformers
 ipykernel
 openai
+modelscope
