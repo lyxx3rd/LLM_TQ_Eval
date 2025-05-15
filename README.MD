@@ -14,16 +14,15 @@ Regression_model_base : https://www.modelscope.cn/iic/nlp_bert_backbone_base_std
 
 Regression_model_regression : https://www.modelscope.cn/l424102993/LLM_TQ_Regression_model.git
 
-使用git下载
+使用git下载(与魔塔sdk二选一)
 ```bash
 cd data/models
 git clone https://www.modelscope.cn/l424102993/LLM_TQ_Tuned_model.git
 git clone https://www.modelscope.cn/iic/nlp_bert_backbone_base_std
 git clone https://www.modelscope.cn/l424102993/LLM_TQ_Regression_model.git
-## 替换其他路径
 ```
 
-使用魔塔sdk下载
+使用魔塔sdk下载(推荐)
 ```python
 #SDK模型下载
 from modelscope import snapshot_download
