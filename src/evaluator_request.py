@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 import yaml
 
 # 读取 YAML 文件
-with open("./github/config.yaml", "r") as f:
+with open("./configs/config.yaml", "r") as f:
     config = yaml.safe_load(f)  # 安全加载，避免执行恶意代码
 
 Qwen_7B_Review_Tuned_model = config['evaluator_request']['Qwen_7B_comment_Tuned_model']

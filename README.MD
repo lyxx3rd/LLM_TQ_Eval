@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 Qwen_7B_Review_Tuned_model : https://www.modelscope.cn/l424102993/LLM_TQ_Tuned_model.git
 
-Regression_model_base : https://www.modelscope.cn/iic/nlp_bert_backbone_base_std
+Regression_model_base : https://www.modelscope.cn/iic/nlp_bert_backbone_base_std.git
 
 Regression_model_regression : https://www.modelscope.cn/l424102993/LLM_TQ_Regression_model.git
 
@@ -34,17 +34,29 @@ model_dir = snapshot_download('l424102993/LLM_TQ_Regression_model.gitl', cache_d
 ```
 ## 使用方式
 
-1. 修改config.ymal
+1.修改./configs/config.ymal
 
-修改模型目录以及cuda
+根据下载模型的地址修改config.ymal的模型目录以及指定cuda号
 
 2.启动评分requests服务
-```python
-python evaluator_request.py
+
+2.1 直接使用bass启动request服务
+```bash
+bash serve.py
 ```
 
-3.使用Evaluate_example.ipynb 调用api接口或本地模型进行单个模型单次的评分测试
+2.2 手动启动
+如需指定虚拟环境或其他需求, 可手动启动 ./src/evaluator_request.py
+注意手动启动时,可能需要修改evaluator_request.py里config.yaml的读取的相对路径, 以及config.yaml里模型的相对路径
+
+3.添加API keys
+在Evaluate_example.ipynb 对应位置添加Qwen的API Keys, 或自行修改相关代码以调用其他模型
+
+4.模型测试
+使用Evaluate_example.ipynb 进行单个模型单次的评分测试
 
 ## 批量评估
 
-1.使用Evaluate_batch.ipynb 调用api接口或本地模型进行多个模型的评分测试
+1.使用/notebooks/Evaluate_batch.ipynb 调用api接口或本地模型进行多个模型的评分测试
+
+2.使用/notebooks/Generated_Result_Visualization_Analysis.ipynb可视化查看并对比分析结果
