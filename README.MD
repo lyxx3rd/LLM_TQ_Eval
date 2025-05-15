@@ -34,11 +34,13 @@ model_dir = snapshot_download('l424102993/LLM_TQ_Regression_model', cache_dir = 
 ```
 ## 使用方式
 
-1.修改./configs/config.ymal
+### 1. 修改配置文件
+
+修改配置文件 ./configs/config.ymal
 
 根据下载模型的地址修改config.ymal的模型目录以及指定cuda号
 
-2.启动评分requests服务
+### 2. 启动评分requests服务
 
 2.1 直接使用bass启动request服务
 ```bash
@@ -49,10 +51,10 @@ bash serve.py
 如需指定虚拟环境或其他需求, 可手动启动 ./src/evaluator_request.py
 注意手动启动时,可能需要修改evaluator_request.py里config.yaml的读取的相对路径, 以及config.yaml里模型的相对路径
 
-3.添加API keys
+### 3.添加API keys
 在Evaluate_example.ipynb 对应位置添加Qwen的API Keys, 或自行修改相关代码以调用其他模型
 
-4.模型测试
+### 4.模型测试
 使用Evaluate_example.ipynb 进行单个模型单次的评分测试
 
 ## 批量评估
