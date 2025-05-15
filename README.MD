@@ -27,9 +27,9 @@ git clone https://www.modelscope.cn/l424102993/LLM_TQ_Regression_model.git
 ```python
 #SDK模型下载
 from modelscope import snapshot_download
-model_dir = snapshot_download('l424102993/LLM_TQ_Tuned_model', cache_dir = "../data/models/")
-model_dir = snapshot_download('iic/nlp_bert_backbone_base_std', cache_dir = "../data/models/")
-model_dir = snapshot_download('l424102993/LLM_TQ_Regression_model', cache_dir = "../data/models")
+model_dir = snapshot_download('l424102993/LLM_TQ_Tuned_model', cache_dir = "./data/models/")
+model_dir = snapshot_download('iic/nlp_bert_backbone_base_std', cache_dir = "./data/models/")
+model_dir = snapshot_download('l424102993/LLM_TQ_Regression_model', cache_dir = "./data/models")
 ## 替换其他路径
 ```
 ## 使用方式
