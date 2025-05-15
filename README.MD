@@ -1,4 +1,4 @@
-## 配置环境
+## 资源占用
 
 python = 3.12.9;
 
@@ -6,7 +6,7 @@ python = 3.12.9;
 
 显存占用约:18G;
 
-安装环境
+## 配置环境
 ```bash
 pip install -r requirements.txt
 ```
