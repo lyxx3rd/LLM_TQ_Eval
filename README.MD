@@ -65,3 +65,16 @@ bash serve.py
 1.使用/notebooks/Evaluate_batch.ipynb 调用api接口或本地模型进行多个模型的评分测试
 
 2.使用/notebooks/Generated_Result_Visualization_Analysis.ipynb可视化查看并对比分析结果
+
+## 引用
+```
+@misc{yunhan2025legalevalqnewbenchmarkquality,
+      title={LegalEval-Q: A New Benchmark for The Quality Evaluation of LLM-Generated Legal Text}, 
+      author={Li yunhan and Wu gengshen},
+      year={2025},
+      eprint={2505.24826},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.24826}, 
+}
+```
