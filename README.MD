@@ -66,6 +66,33 @@ bash serve.py
 
 2.使用/notebooks/Generated_Result_Visualization_Analysis.ipynb可视化查看并对比分析结果
 
+# 研究成果
+
+## 模型质量的影响因素
+
+### 模型参数量:7B-14B性价比最佳
+
+受到模型训练方式以及训练数据集的影响, 模型的文本质量得分及其推理能力都在7B-14B时接近瓶颈. 
+
+![文本得分及数学能力对比图](./images/fig_dis_f2_Score_and_math.png)
+
+即在垂直领域的大模型部署时, 并不需要去追求模型过大, 因为其边际效应递减非常明显, 反而是模型的架构的更新或者原始数据集/微调数据集的质量会对其影响更大.
+
+### 推理模型:推理模型优于普通模型
+
+虽然已经有大量的论文论证的CoT的有效性以及推理模型的性能, 但是大多数的论证都是集中有推理模型在推理能力(指令遵从能力,数学能力等)的差异, 但是我们发现对于纯粹的输出文本的文本质量, 推理模型也会明显优于普通的模型.
+
+![推理模型和普通模型](./images/fig_dis_f4_Reasoning_Base.png)
+
+
+## 最佳模型选择:
+
+### 价格
+
+不同的模型受其供应商和API渠道的影响在使用价格上表现出了较大的差距. 本实验对比了API的使用价格(RMB/1M tokens)和输出的文本质量. 在目前测试模型中, 性价比最高的为vocles-lite, qwen-plus 以及deepseek-v3-0324.
+
+![推理模型和普通模型](./images/fig_dis_f6_Price_AdjCV.png)
+
 ## 引用
 ```
 @misc{yunhan2025legalevalqnewbenchmarkquality,
